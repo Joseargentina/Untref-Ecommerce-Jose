@@ -1,4 +1,5 @@
 ::root {
     --color-primario: #FF0000;
     --color-fondo: #202074df;
+    --fuente-principal: 'Roboto', sans-serif;
 }
