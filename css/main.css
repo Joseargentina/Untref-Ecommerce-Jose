@@ -1,1 +1,21 @@
 @import url('./imports/base.css');
+
+.contenedor {
+    width: 90%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.titulo-principal, .titulo-productos {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+/* Footer */
+
+.copyright {
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 1.7rem;
+    font-family: var(--fuente-secundaria);
+}

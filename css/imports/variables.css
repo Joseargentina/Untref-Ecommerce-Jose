@@ -1,5 +1,7 @@
-::root {
-    --color-primario: #FF0000;
-    --color-fondo: #202074df;
-    --fuente-principal: 'Roboto', sans-serif;
+:root {
+    --color-fondo-producto: #5d1dac;
+    --color-fondo: #ada1b3b0;
+    --fuente-principal: 'Rubik', sans-serif; 
+    --fuente-secundaria: 'Roboto', sans-serif;
+    --fuente-productos-nombres: 'Merriweather', serif;
 }
