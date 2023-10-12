@@ -1,36 +1,20 @@
-fetch('data/productos.js')
-    .then(respuesta => respuesta.json())
-    .then(function (datos) {
-        console.log(datos);
-})
-.catch(error => {
-    // Manejar cualquier error
-    console.error('Error al cargar el archivo productos.js:', error);
-});
+import { obtenerDetallesProducto, agregarAlCarrito } from './funciones.js';
 
 // Obtener el ID del producto de la URL
 const urlParams = new URLSearchParams(window.location.search);
 const productId = urlParams.get('id');
-// let tituloProducto = urlParams.get('titulo');
-// document.querySelector('.titulo-productos').textContent = tituloProducto;
 
-// Realizar una nueva solicitud para obtener los detalles del producto
-fetch('data/productos.js')
-    .then(respuesta => respuesta.json())
-    .then(function (datos) {
-        // Buscar el producto correspondiente al ID
-        const producto = datos.find(producto => producto.id === productId);
-        if (producto) {
-            // Imprimir los detalles del producto en detail.html
-            imprimirDetalles(producto);
-        } else {
-            console.error('No se encontró el producto con ID:', productId);
-        }
+obtenerDetallesProducto(productId)
+    .then(function (producto) {
+        // Imprimir los detalles del producto en detail.html
+        imprimirDetalles(producto);
     })
-    .catch(error => {
-        // Manejar cualquier error
-        console.error('Error al cargar el archivo productos.js:', error);
+    .catch(function (error) {
+        console.error(error);
     });
+
+// Variable para obtener el valor del contador de productos en el localStorage
+let contador = parseInt(localStorage.getItem('contadorProductos')) || 0;
 
 function imprimirDetalles(producto) {
     let productoDetalleTitulo = document.querySelector('.titulo-productos');
@@ -61,8 +45,38 @@ function imprimirDetalles(producto) {
     descripcionAvanzada.textContent = producto.descripcionAvanzada;
     figcaption.appendChild(descripcionAvanzada);
 
+    // Crear el contenedor para las estrellas
+    let estrellasContainer = document.createElement('fieldset');
+    estrellasContainer.className = 'estrellas';
+
+    // Obtener el precio del producto
+    let precio = producto.precio;
+
+    // Determinar la cantidad de estrellas según el precio
+    let cantidadEstrellas;
+    if (precio < 85000) {
+    cantidadEstrellas = 3;
+    } else {
+    cantidadEstrellas = 5;
+    }
+    // Crear las estrellas utilizando etiquetas <i>
+    for (let i = 1; i <= 5; i++) {
+        let estrella = document.createElement('i');
+        estrella.className = 'fa-sharp fa-solid fa-star';
+
+    // Pintar las estrellas hasta la cantidad aleatoria generada
+    if (i <= cantidadEstrellas) {
+        estrella.classList.add('estrella-llena');
+    }
+
+    estrellasContainer.appendChild(estrella);
+    }
+
+    // Agregar el contenedor de estrellas después de la descripción avanzada
+    figcaption.appendChild(estrellasContainer);
+
     let precioProducto = document.createElement('span');
-    precioProducto.textContent = '$' + producto.precio;
+    precioProducto.textContent = 'Precio $' + producto.precio;
     figcaption.appendChild(precioProducto);
 
     let btnAgregarAlCarrito = document.createElement('button');
@@ -70,7 +84,14 @@ function imprimirDetalles(producto) {
     btnAgregarAlCarrito.textContent = 'Agregar Al Carrito';
     figcaption.appendChild(btnAgregarAlCarrito);
 
+
+    // Función agregarAlCarrito en este archivo
+    btnAgregarAlCarrito.addEventListener('click', function (e){
+        agregarAlCarrito(producto);
+    });
+
     let btnVolver = document.createElement('a');
+    btnVolver.className = 'btn-volver';
     btnVolver.textContent = 'Volver a Inicio';
     btnVolver.href = 'index.html';
     figcaption.appendChild(btnVolver);
@@ -79,3 +100,15 @@ function imprimirDetalles(producto) {
     contenedorProducto.appendChild(figure);
     contenedorProducto.appendChild(figcaption);
 }
+
+//redirigir a cart.html cuando se de click en el carrito
+const contadorCarrito = document.getElementById('carrito');
+contadorCarrito.addEventListener('click', function() {
+    window.location.href = 'cart.html';
+});
+
+//Obtener la cantidad de productos guardados en el localStorage
+window.addEventListener('DOMContentLoaded', function () {
+    let contador = parseInt(localStorage.getItem('contadorProductos')) || 0;
+    document.getElementById('contadorProductos').textContent = contador;
+});

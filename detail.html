@@ -6,16 +6,21 @@
     <title>Detalle del producto</title>
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/pages/detail.css">
-    <script defer src="./js/detail.js"></script>
+    <script defer type="module" src="./js/detail.js"></script>
 </head>
 <body>
     <header>
+        <nav>
+            <a href="./index.html" target="_blank"><i class="fa-sharp fa-solid fa-house icono-inicio"></i></a>
+        </nav>
+
         <h1 class="titulo-principal">Todo para la construccion</h1>
 
         <section class="carrito-icono" id="carrito">
                 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                 <span id="contadorProductos">0</span> 
         </section>
+
     </header>
     <main>
         <h2 class="titulo-productos"></h2>
@@ -24,5 +29,7 @@
     <footer>
         <p class="copyright">Todos los derechos reservados Todo para la construccion 2023</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

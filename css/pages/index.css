@@ -1,34 +1,57 @@
 /*Mobile*/
 
-.carrito-icono {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 38px;
-    right: 8px;
-    font-size: 2rem;
-    transition: all 300ms ease-in-out;
+
+.titulo-productos {
+    text-shadow: 0px 2px 4px rgba(22, 21, 21, 0.628);
+    font-size: 2.3rem;
+    color: rgb(42, 24, 108);
 }
 
-.carrito-icono:hover {
-    cursor: pointer;
+#contenedor-productos{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .producto {
     background-color: var(--color-fondo-producto);
     border-radius: 10px;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    gap: 1rem;
+    font-family: var(--fuente-secundaria);
+}
+.producto h3 {
+    font-family: var(--fuente-productos-nombres);
+}
 
+.btn-detalle {
+    font-size: 1.8rem;
+    background-color: rgb(59 201 33 / 64%);
+    width: 70%;
 }
 
 /* tablet 1280 */
 @media (min-width: 1280px) {
-    
+    #contenedor-productos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    #contenedor-productos article:last-child{
+        position: relative;
+        left: 50%;
+    }
 } 
 
 /* desktop 1366 */
 @media (min-width: 1366px) {
     .carrito-icono {
-        top: 15px;
+        top: 22px;
         right: 15px;
     }
 
@@ -38,26 +61,12 @@
         gap: 2rem;
     }
 
-    .producto {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: space-evenly;
-        gap: 1rem;
-        background-color: var(--color-fondo-producto);
-        font-family: var(--fuente-secundaria);
-    }
-    .producto h3 {
-        font-family: var(--fuente-productos-nombres);
+    #contenedor-productos article:last-child{
+        position: relative;
+        left: 0;
     }
 
-    .btn-detalle {
-        font-size: 1.8rem;
-        background-color: rgb(48, 187, 143);
-        width: 70%;
-    }
-
-    .btn-detalle:hover {
-        cursor: pointer;
+    .titulo-productos {
+        font-size: 3.3rem;
     }
 }

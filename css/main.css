@@ -1,21 +1,65 @@
 @import url('./imports/base.css');
 
+/*Mobile*/
 .contenedor {
     width: 90%;
     max-width: 120rem;
     margin: 0 auto;
 }
 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .titulo-principal, .titulo-productos {
     text-align: center;
     margin: 2rem 0;
+    text-shadow: 0px 2px 4px rgba(22, 21, 21, 0.628);
+}
+
+/*Icono del carrito*/
+.carrito-icono {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2rem;
+    transition: all 300ms ease-in-out;
+    color: #000;
+    margin-right: 0.5rem;
+    margin-top: 1.3rem;
+}
+
+.carrito-icono:hover {
+    cursor: pointer;
+}
+
+.icono-inicio{
+    color: #000;
+    font-size: 2rem;
+    padding: 0.5rem;
+    transition: all 300ms ease-in-out;
+}
+
+.icono-inicio:hover {
+    cursor: pointer;
+}
+
+.btn-agregar-carrito {
+    background-color:rgb(59 201 33 / 64%);
 }
 
 /* Footer */
-
 .copyright {
     text-align: center;
     margin: 2rem 0;
     font-size: 1.7rem;
     font-family: var(--fuente-secundaria);
 }
+/*Tablet*/
+
+/*Desktop*/
+/* @media (min-width: ) {
+    
+}  */

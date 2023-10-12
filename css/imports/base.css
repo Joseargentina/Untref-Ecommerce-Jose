@@ -11,13 +11,19 @@ html {
     box-sizing: border-box;
 }
 
+ul, li {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     font-size: 1.6rem;
     font-family: var(--fuente-principal);
-    background-color: var(--color-fondo);
+    background: var(--linear-gradient);
 }
 
 h1, h2, h3, h4, p {
@@ -30,7 +36,7 @@ h1 {
 
 .btn {
     font-size: 1.8rem;
-    background-color: rgb(48, 187, 143);
+    font-weight: 600;
     border-radius: 10px;
     padding: 1rem;
     transition: all 300ms ease-in-out;
@@ -66,9 +72,5 @@ a {
     color: #fff;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-}
+
 
