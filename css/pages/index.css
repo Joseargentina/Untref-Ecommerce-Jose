@@ -35,8 +35,8 @@
     width: 70%;
 }
 
-/* tablet 1280 */
-@media (min-width: 1280px) {
+/* tablet 780 */
+@media (min-width: 780px) {
     #contenedor-productos{
         display: grid;
         grid-template-columns: 1fr 1fr;
