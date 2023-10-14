@@ -258,7 +258,20 @@ export function finalizarCompra() {
                     '¡Buen trabajo!',
                     '¡Has finalizado la compra!',
                     'success'
-                );
+                ).then(() => {
+                    
+                    // Limpiar el valor del contador en el localStorage
+                    localStorage.removeItem('contadorProductos');
+                    //remover lo que se guardo en el localstorage del carrito
+                    localStorage.removeItem('carrito');
+
+                    // Limpiar el contenido del contenedor del carrito
+                    const contenedorCarrito = document.querySelector("#contenedor-carrito");
+                    contenedorCarrito.innerHTML = "";
+                    // Actualizar el contador de productos y establecerlo en 0
+                    const contadorProductos = document.getElementById('contadorProductos');
+                    contadorProductos.textContent = "0";
+                });
             }
         });
     });
