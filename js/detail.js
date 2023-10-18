@@ -15,6 +15,8 @@ obtenerDetallesProducto(productId)
 
 // Variable para obtener el valor del contador de productos en el localStorage
 let contador = parseInt(localStorage.getItem('contadorProductos')) || 0;
+document.getElementById('contadorProductos').textContent = contador;
+
 
 function imprimirDetalles(producto) {
     let productoDetalleTitulo = document.querySelector('.titulo-productos');
@@ -107,8 +109,3 @@ contadorCarrito.addEventListener('click', function() {
     window.location.href = 'cart.html';
 });
 
-//Obtener la cantidad de productos guardados en el localStorage
-window.addEventListener('DOMContentLoaded', function () {
-    let contador = parseInt(localStorage.getItem('contadorProductos')) || 0;
-    document.getElementById('contadorProductos').textContent = contador;
-});

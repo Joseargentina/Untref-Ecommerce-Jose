@@ -15,7 +15,6 @@ traerDatos()
     const carrito = JSON.parse(localStorage.getItem('carrito'));
     const contenedorCarrito = document.getElementById('contenedor-carrito');
     let contenidoHTML = ''; //variable para almacenar el contenido HTML del contenedor-carrito
-
     
 
     if (!Array.isArray(carrito) || carrito.length === 0) {
@@ -24,7 +23,6 @@ traerDatos()
             title: 'Oops...',
             text: 'El carrito se encuentra vacio!'
         })
-        contenidoHTML = actualizarContenidoCarrito();
     } else {
         carrito.forEach(function (producto) {
             // Llamar a la funcion actualizarContenedorCarrito y actualizarContenidoPrecioFinal y asignar el contenido HTML devuelto
@@ -37,6 +35,13 @@ traerDatos()
         mostrarPrecioFinal();
         mostrarPrecioProducto();
 
+        const btnFinalizarCompra = document.querySelector(".btn-finalizar-compra");
+        // Agregar evento de click al botón de finalizar compra
+        btnFinalizarCompra.addEventListener('click', function(e) {
+            e.preventDefault()
+            finalizarCompra();
 
-        finalizarCompra();
+            console.log('compra finalizadaa')
+            
+        });
 }

@@ -14,7 +14,7 @@
         "img": "./assets/img/daewoo.jpg",
         "alt": "Imagen del Taladro Daewoo",
         "descripcion": ["Tiempo de carga de la batería: 5h", "Con batería incluida de Li-ion", "Posee control de torque","Incluye función percutor."],
-        "descripcionAvanzada": "Los taladros inalámbricos de Bosch no solo son potentes, sino que también tienen estándares altos por su gran robustez. Impresionan por su peso óptimo y la autonomía de funcionamiento de su batería. Gracias al sistema profesional 12V y 18V, puedes combinar y emparejar cualquier batería y cargador con todas las herramientas del mismo voltaje.",
+        "descripcionAvanzada": "Nuestro taladro atornillador DACD1800V, es una excelente opción, para quien busca una herramienta simple y práctica de usar ideal en las más diversas tareas. Provisto de un potente y confiable motor alimentado por una batería extraíble de litio de 18 v y 1,5 Ah. Incorpora la función PERCUTOR, ideal para perforar en mampostería. Velocidad variable y contramarcha",
         "precio": 53600
     },
     {
@@ -22,8 +22,8 @@
         "id": "225F497P6",
         "img": "./assets/img/daihatsu1.jpg",
         "alt": "Imagen del Taladro Daihatsu",
-        "descripcion": ["Con función reversa", "Su frecuencia es de 50Hz.", "Incluye función percutor.", "Velocidad máxima de rotación: 3000rpm."],
-        "descripcionAvanzada": "Los taladros inalámbricos de Bosch no solo son potentes, sino que también tienen estándares altos por su gran robustez. Impresionan por su peso óptimo y la autonomía de funcionamiento de su batería. Gracias al sistema profesional 12V y 18V, puedes combinar y emparejar cualquier batería y cargador con todas las herramientas del mismo voltaje.",
+        "descripcion": ["Velocidad máxima de rotación: 3.3rpm", "Con función reversa", "Su frecuencia es de 50Hz.","Incluye función percutor."],
+        "descripcionAvanzada": "Con el taladro eléctrico Daihatsu HI-A36 podrás realizar múltiples tareas en diversas superficies de un modo práctico y sencillo. Su potencia de 65 W te ofrecerá gran capacidad de perforación.",
         "precio": 54000
     },
     {
@@ -32,7 +32,7 @@
         "img": "./assets/img/dewalt1.jpg",
         "alt": "Imagen del Taladro DeWalt",
         "descripcion": ["Viene con maletín de transporte.", "Velocidad máxima de rotación: 1750rpm.", "Con batería incluida de Li-ion.", "Posee control de torque."],
-        "descripcionAvanzada": "Los taladros inalámbricos de Bosch no solo son potentes, sino que también tienen estándares altos por su gran robustez. Impresionan por su peso óptimo y la autonomía de funcionamiento de su batería. Gracias al sistema profesional 12V y 18V, puedes combinar y emparejar cualquier batería y cargador con todas las herramientas del mismo voltaje.",
+        "descripcionAvanzada": "Con más poder, compacto y liviano, el Taladro Percutor/Atornillador Inalámbrico de 20V MAX* DEWALT, cuenta con Tecnología sin Carbones (BRUSHLESS), que le otorga a la herramienta una mayor eficiencia, que se traduce en más tiempo de uso y requiere menos mantenimiento. Cuenta con 3 Años de Garantía Limitada, 1 Año de Mantenimiento Gratis y 90 Días de Satisfacción Garantizada.",
         "precio": 208000
     },
     {
@@ -41,7 +41,7 @@
         "img": "./assets/img/einshell.jpg",
         "alt": "Imagen del Taladro Einshell",
         "descripcion": ["Velocidad máxima de rotación: 2000rpm.", "Incluye función percutor.", "Tiempo de carga de la batería: 40m.", "Posee control de torque."],
-        "descripcionAvanzada": "Los taladros inalámbricos de Bosch no solo son potentes, sino que también tienen estándares altos por su gran robustez. Impresionan por su peso óptimo y la autonomía de funcionamiento de su batería. Gracias al sistema profesional 12V y 18V, puedes combinar y emparejar cualquier batería y cargador con todas las herramientas del mismo voltaje.",
+        "descripcionAvanzada": "Se trata de un equipo versátil y de gran potencia, que presta un muy buen servicio en la casa, el taller y el garaje en trabajos de atornillado y perforación. El robusto engranaje metálico de 2 velocidades y el motor de alta potencia para el par de giro elevado permiten un atornillado potente y perforación rápida.",
         "precio": 194000
     },
     {
@@ -49,8 +49,8 @@
         "id": "552429S1",
         "img": "./assets/img/gamma.jpg",
         "alt": "Imagen del Taladro Gamma",
-        "descripcion": ["Velocidad máxima de rotación: 1300rpm.", "Con batería incluida de Li-ion.", "Incluye función percutor.", "Tiempo de carga de la batería: 60m."],
-        "descripcionAvanzada": "Los taladros inalámbricos de Bosch no solo son potentes, sino que también tienen estándares altos por su gran robustez. Impresionan por su peso óptimo y la autonomía de funcionamiento de su batería. Gracias al sistema profesional 12V y 18V, puedes combinar y emparejar cualquier batería y cargador con todas las herramientas del mismo voltaje.",
+        "descripcion": ["Velocidad máxima de rotación: 1300rpm.", "2 baterías incluidas de Li-ion.", "Incluye función percutor.", "Tiempo de carga de la batería: 60m."],
+        "descripcionAvanzada": "Diseñado para perforar y atornillar con mango ergonómico recubierto de goma para mas confort. Dos velocidades, con función de avance y retroceso Selector de velocidad Iluminación adicional Led. El Kit incluye: maletín, 2 baterías y 1 cargador.",
         "precio": 64000
     },
     {
@@ -59,7 +59,7 @@
         "img": "./assets/img/garden-plus1.jpg",
         "alt": "Imagen del Taladro Garden Plus",
         "descripcion": ["Velocidad máxima de rotación: 1400 rpm", "Velocidad ajustable", "Tamaño del mandril: 10 mm", "No posee funcion percutor"],
-        "descripcionAvanzada": "Los taladros inalámbricos de Bosch no solo son potentes, sino que también tienen estándares altos por su gran robustez. Impresionan por su peso óptimo y la autonomía de funcionamiento de su batería. Gracias al sistema profesional 12V y 18V, puedes combinar y emparejar cualquier batería y cargador con todas las herramientas del mismo voltaje.",
+        "descripcionAvanzada": "El taladro inalámbrico Garden Plus es ligero y facil de usar, La solución ideal para taladrar de manera precisa, eficiente y eficaz. utilizalo para las aplicaciones que deseás, al ser percutor y destornillador podrás explotar al máximo sus funciones y obtener exactitud y calidad.",
         "precio": 65000
     },
     {
@@ -68,7 +68,7 @@
         "img": "./assets/img/hamilton.jpg",
         "alt": "Imagen del Taladro Hamilton",
         "descripcion": ["Velocidad máxima de rotación: 1650rpm.", "Su frecuencia es de 50Hz.", "Incluye función percutor.", "Con batería incluida de Li-ion."],
-        "descripcionAvanzada": "Los taladros inalámbricos de Bosch no solo son potentes, sino que también tienen estándares altos por su gran robustez. Impresionan por su peso óptimo y la autonomía de funcionamiento de su batería. Gracias al sistema profesional 12V y 18V, puedes combinar y emparejar cualquier batería y cargador con todas las herramientas del mismo voltaje.",
+        "descripcionAvanzada": "Con el taladro eléctrico Hamilton ULT111 podrás realizar múltiples tareas en diversas superficies de un modo práctico y sencillo, su mandril de 13 mm te permitirá manipular fácilmente la herramienta de manera segura y precisa, ligero y facil de usar, Al no haber cables de por medio, vas a sentirte más cómodo al manipularlo",
         "precio": 100000
     },
     {
@@ -77,7 +77,7 @@
         "img": "./assets/img/lusqtoff3.jpg",
         "alt": "Imagen del Taladro Lusqtoff",
         "descripcion": ["Velocidad maxima de rotación 1.350rpm.", "Velocidad ajustable", "Incluye funcion percutor", "Luz LED integrada"],
-        "descripcionAvanzada": "Los taladros inalámbricos de Bosch no solo son potentes, sino que también tienen estándares altos por su gran robustez. Impresionan por su peso óptimo y la autonomía de funcionamiento de su batería. Gracias al sistema profesional 12V y 18V, puedes combinar y emparejar cualquier batería y cargador con todas las herramientas del mismo voltaje.",
+        "descripcionAvanzada": "Los taladros Lusqtoff se destacan por su gran robustez y alta calidad. Con una velocidad de 1350 Rpm y un torque máximo de 25 N/m, ofrecen un rendimiento excepcional en cualquier tarea. Además, con su peso de 3,2 kg, son ligeros y fáciles de manejar, lo que los convierte en la elección perfecta para cualquier proyecto.",
         "precio": 81900
     }
 ]

@@ -1,7 +1,6 @@
 :root {
     --color-fondo-producto: #000000;
-    --linear-gradient: linear-gradient(65deg, rgba(53,50,93,1) 35%, rgb(118, 175, 161) 100%);
-    --color-fondo: #a6a597;
+    --color-fondo: #766777b8;
     --fuente-principal: 'Rubik', sans-serif; 
     --fuente-secundaria: 'Roboto', sans-serif;
     --fuente-productos-nombres: 'Merriweather', serif;

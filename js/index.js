@@ -1,6 +1,6 @@
-import { recorrerProductos, traerDatos  } from './funciones.js';
+import { recorrerProductos, traerDatos, agregarAlCarrito  } from './funciones.js';
 
-
+//uso la funcion traer datos para obtener los datos de los productos
 traerDatos()
     .then(function (datos) {
         recorrerProductos(datos);
@@ -18,3 +18,5 @@ const iconoCarrito = document.getElementById('carrito');
 iconoCarrito.addEventListener('click', function() {
     window.location.href = 'cart.html';
 });
+
+

@@ -42,8 +42,9 @@ figcaption {
 
 .contenedor-total-productos{
     padding: 2rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
     align-items: center;
     text-align: center;
     width: 100%;
@@ -51,6 +52,10 @@ figcaption {
 }
 .contenedor-total-productos h3 {
     text-align: center;
+}
+
+.contenedor-total-productos .precio-final {
+    font-weight: 600;
 }
 
 .contenedor-finalizar-compra {
@@ -77,7 +82,7 @@ figcaption {
 
 
 /*Tablet*/
-@media (min-width: 1280px) {
+@media (min-width: 768px) {
     figcaption {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -91,17 +96,16 @@ figcaption {
     .contenedor-total-productos {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        width: 50%;
+        width: 70%;
     }
 
     .contenedor-total-productos h3 {
         text-align: end;
     }
 
-    .contenedor-finalizar-compra{
-        width: 50%;
+    .contenedor-finalizar-compra {
+        width: 70%;
         border-radius: 10px;
-
     }
 
     .btn-finalizar-compra{
@@ -109,7 +113,9 @@ figcaption {
     }
 } 
 /*Desktop*/
-@media (min-width: 1366px) {
-    
+@media (min-width: 1024px) {
+    .contenedor-total-productos {
+        width: 50%;
+    }
 } 
 

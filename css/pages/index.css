@@ -24,7 +24,7 @@
 
 .btn-detalle {
     font-size: 1.8rem;
-    background-color: rgb(59 201 33 / 64%);
+    background-color: rgba(71, 199, 118, 0.64);
     width: 70%;
 }
 
@@ -38,6 +38,10 @@
     #contenedor-productos article:last-child{
         position: relative;
         left: 50%;
+    }
+
+    figure img {
+        height: 40rem;
     }
 } 
 
