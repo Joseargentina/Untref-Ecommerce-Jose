@@ -63,17 +63,17 @@ figcaption {
     width: 100%;
     margin: 0 auto;
     display: block;
-    background-color: var(--linear-gradient);
 }
 
 .btn-finalizar-compra {
     width: 100%;
-    color: #000;
-    background: linear-gradient(to right, #48933dcf, #3030db);
+    color: #e1e1e1;
+    background-color: rgba(205,70,128,0.9809173669467787);
 }
 
 .btn-finalizar-compra:hover {
-    color: aqua;
+    color: #000000;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); 
 }
 
 .contenedor-carrito-vacio {
